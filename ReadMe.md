@@ -51,32 +51,32 @@
 
 ## Основные возможности
 ### Компоненты
-* [Observable.java](src/main/java/rx/impl/Observable.java) - Источник данных. Методы:
+* [Observable.java](src/main/java/dn/rx/impl/Observable.java) - Источник данных. Методы:
 * * create()
 * * just()
-* [Observer.java](src/main/java/rx/Observer.java) Интерфейс потребителя с методами:
+* [Observer.java](src/main/java/dn/rx/Observer.java) Интерфейс потребителя с методами:
 * * onNext()
 * * onError()
 * * onComplete()
 
 ### Операторы
 Расположены в пакете operators:
-* [Map.java](src/main/java/operator/Map.java) - Преобразует каждый элемент потока
-* [Filter.java](src/main/java/operator/Filter.java) - Отбирает элементы по условию
-* [FlatMap.java](src/main/java/operator/FlatMap.java) - Преобразует элементы в новые потоки
-* [Merge.java](src/main/java/operator/Merge.java) - Объединяет несколько потоков
-* [Concat.java](src/main/java/operator/Concat.java) - Последовательно объединяет потоки
-* [Reduce.java](src/main/java/operator/Reduce.java) - Сворачивает поток в одно значение
+* [Map.java](src/main/java/dn/operator/Map.java) - Преобразует каждый элемент потока
+* [Filter.java](src/main/java/dn/operator/Filter.java) - Отбирает элементы по условию
+* [FlatMap.java](src/main/java/dn/operator/FlatMap.java) - Преобразует элементы в новые потоки
+* [Merge.java](src/main/java/dn/operator/Merge.java) - Объединяет несколько потоков
+* [Concat.java](src/main/java/dn/operator/Concat.java) - Последовательно объединяет потоки
+* [Reduce.java](src/main/java/dn/operator/Reduce.java) - Сворачивает поток в одно значение
 
 ### Планировщики (Schedulers)
 Позволяют управлять потоками выполнения:
 
-- [IOImpl.java](src/main/java/scheduler/impl/IOImpl.java): Для I/O операций и сетевых вызовов
-- [ComputationImpl.java](src/main/java/scheduler/impl/ComputationImpl.java): Для вычислений
-- [SingleImpl.java](src/main/java/scheduler/impl/SingleImpl.java): Для последовательной обработки
+- [IOImpl.java](src/main/java/dn/scheduler/impl/IOImpl.java): Для I/O операций и сетевых вызовов
+- [ComputationImpl.java](src/main/java/dn/scheduler/impl/ComputationImpl.java): Для вычислений
+- [SingleImpl.java](src/main/java/dn/scheduler/impl/SingleImpl.java): Для последовательной обработки
 
 ### Отмена подписки
-- [DisposableImpl.java](src/main/java/rx/impl/DisposableImpl.java): Управление одной подпиской.
+- [DisposableImpl.java](src/main/java/dn/rx/impl/DisposableImpl.java): Управление одной подпиской.
 - [CompositeDisposableImpl.java](src/main/java/rx/impl/CompositeDisposableImpl.java): Групповая отмена подписок.
 
 ## Установка и запуск
